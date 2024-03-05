@@ -910,7 +910,7 @@ body.light-theme {
   }
 }
 
-/* For medium devices */
+/* Fddor medium devices */
 @media screen and (min-width: 630px) {
   .nav__menu {
     width: 328px;
