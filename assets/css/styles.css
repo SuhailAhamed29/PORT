@@ -475,9 +475,8 @@ body.light-theme {
 /*=============== SKILLS ===============*/
      
       .skills__container {
-        row-gap: 1rem;
+        gap: 1rem;
         padding-top: 1rem;
-        
         
       }
 
@@ -522,7 +521,8 @@ body.light-theme {
       .skills__name {
         font-size: var(--normal-font-size);
         font-weight: var(--font-medium);
-        line-height: 18px;
+        line-height: 15px;
+        white-space: nowrap;
       }
 
       .skills__level {
@@ -875,6 +875,7 @@ body.light-theme {
 
   .skills__box {
     column-gap: 1rem;
+    
   }
 
   .skills__name {
@@ -945,6 +946,7 @@ body.light-theme {
   .skills__title {
     font-size: var(--h3-font-size);
     margin-bottom: 1.5rem;
+    white-space: nowrap;
   }
 
   .skills__box {
@@ -1072,6 +1074,7 @@ body.light-theme {
 
   .about__data {
     text-align: initial;
+    
   }
 
   .about__info {
