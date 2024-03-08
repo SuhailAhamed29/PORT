@@ -277,6 +277,10 @@ body.light-theme {
   transition: 0.4s;
   display: flex;
   border-radius: 5rem;
+  transition: transform 0.1s ease-in-out;
+}
+.nav__link:hover {
+  transform: translateY(-10px); /* Move the link 5 pixels up on hover */
 }
 
 /* Active link */
@@ -837,6 +841,8 @@ body.light-theme {
   margin-bottom: 2rem;
 }
 
+
+
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: 0.5rem;
@@ -1166,4 +1172,12 @@ body.light-theme {
     padding: 0.4rem;
     border-radius: 0.5rem;
   }
+}
+
+.footer__social-icon {
+  transition: transform 0.3s ease-in-out; /* Add transition for smoother animation */
+}
+
+.footer__social-link:hover .footer__social-icon {
+  transform: scale(3.2); /* Scale up the icon on hover */
 }
