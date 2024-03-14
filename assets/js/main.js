@@ -235,15 +235,17 @@ sr.reveal(`.footer, footer__container`, {
   distance: "30px",
 });
 
-
 document.addEventListener('DOMContentLoaded', function() {
   // Japanese representation of "Suhail Ahamed"
   var japaneseName = 'スハイル アハメド ハアハ';
-  var englishName = 'Suhail Ahamed';
+  var englishName = 'SUHAIL AHAMED';
 
   // Set the text content to the Japanese representation
   var title = document.querySelector('.home__name');
   title.textContent = japaneseName;
+
+  // Apply the font family
+  title.style.fontFamily = "'Django Ink'";
 
   // Show the title
   title.style.visibility = 'visible';
@@ -271,3 +273,7 @@ document.querySelectorAll('.view-details-btn').forEach(button => {
     document.body.classList.add('blur-background');
   });
 });
+
+
+
+

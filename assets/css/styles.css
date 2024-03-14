@@ -70,7 +70,7 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  scroll-behavior:smooth;
 }
 
 body,
@@ -332,6 +332,8 @@ body.light-theme {
 .home__name {
   font-size: var(--biggest-font-size);
   color: var(--first-color);
+  
+  
 }
 
 .home__img {
@@ -432,7 +434,10 @@ body.light-theme {
 
 /*=============== ABOUT ===============*/
 .about__container {
-  row-gap: 2.5rem;
+  row-gap: 1.5rem;
+  max-width: 1000px; /* Adjust the width as per your preference */
+  
+
 }
 
 .about__img {
@@ -469,7 +474,7 @@ body.light-theme {
 }
 
 .about__subtitle {
-  font-size: var(--tiny-font-size);
+  font-size: 80%;
 }
 
 .about__description {
@@ -790,6 +795,14 @@ body.light-theme {
 }
 
 /*=============== FOOTER ===============*/
+
+
+
+
+
+
+
+
 .footer {
   background-color: var(--first-color);
 }
@@ -1126,7 +1139,9 @@ body.light-theme {
 
   .work__container {
     grid-template-columns: repeat(3, max-content);
-    gap: 3rem;
+
+       gap: 3rem;          /* skill section on a row  , */
+                                            
   }
 
   .work__card {
@@ -1151,7 +1166,7 @@ body.light-theme {
 
   .contact__info {
     grid-template-columns: 430px;
-    gap: 1rem;
+    gap: 1rem; 
   }
 
   .contact__form {
@@ -1181,3 +1196,5 @@ body.light-theme {
 .footer__social-link:hover .footer__social-icon {
   transform: scale(3.2); /* Scale up the icon on hover */
 }
+
+
