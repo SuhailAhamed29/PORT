@@ -70,7 +70,7 @@
 }
 
 html {
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 body,
@@ -332,8 +332,6 @@ body.light-theme {
 .home__name {
   font-size: var(--biggest-font-size);
   color: var(--first-color);
-  
-  
 }
 
 .home__img {
@@ -434,10 +432,7 @@ body.light-theme {
 
 /*=============== ABOUT ===============*/
 .about__container {
-  row-gap: 1.5rem;
-  max-width: 1000px; /* Adjust the width as per your preference */
-  
-
+  row-gap: 2.5rem;
 }
 
 .about__img {
@@ -474,7 +469,7 @@ body.light-theme {
 }
 
 .about__subtitle {
-  font-size: 80%;
+  font-size: var(--tiny-font-size);
 }
 
 .about__description {
@@ -795,14 +790,6 @@ body.light-theme {
 }
 
 /*=============== FOOTER ===============*/
-
-
-
-
-
-
-
-
 .footer {
   background-color: var(--first-color);
 }
@@ -877,7 +864,177 @@ body.light-theme {
 }
 
 /*=============== BREAKPOINTS ===============*/
+/* For small devices */
+@media screen and (max-width: 320px) {
+  .nav__menu {
+    padding: 1rem 1.5rem;
+  }
 
+  .home__button {
+    flex-direction: column;
+  }
+
+  .home__handle {
+    width: 150px;
+    height: 253px;
+  }
+
+  .home__img {
+    width: 130px;
+  }
+
+  .about__info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills__box {
+    column-gap: 1rem;
+    
+  }
+
+  .skills__name {
+    font-size: var(--small-font-size);
+  }
+
+  .skills__level {
+    font-size: var(--smaller-font-size);
+  }
+
+  .services__container {
+    grid-template-columns: 145px;
+    justify-content: center;
+  }
+
+  .work__item {
+    font-size: var(--small-font-size);
+  }
+
+  .work__filters {
+    column-gap: 0.25rem;
+  }
+}
+
+@media screen and (min-width: 435px) {
+  .work__container {
+    justify-content: center;
+    grid-template-columns: repeat(2, max-content);
+  }
+
+  .work__img {
+    width: 165px;
+  }
+}
+
+/* Fddor medium devices */
+@media screen and (min-width: 630px) {
+  .nav__menu {
+    width: 328px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+
+  .about__info {
+    grid-template-columns: repeat(3, 180px);
+    justify-content: center;
+  }
+
+  .about__description {
+    padding: 1rem 5rem;
+    width: 600px;
+    margin: 0 auto 2rem auto;
+  }
+
+  .about__box {
+    padding: 1.75rem 0.95rem;
+  }
+
+  .skills__container {
+    justify-content: center;
+  }
+
+  .skills__content {
+    padding: 2rem 0.8rem;
+  }
+
+  .skills__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: 1.5rem;
+    white-space: nowrap;
+  }
+
+  .skills__box {
+    column-gap: 5.5rem;
+  }
+
+  .services__container {
+    grid-template-columns: repeat(3, 177px);
+    justify-content: center;
+  }
+
+  .services__modal-content {
+    width: 500px;
+    padding: 4.5rem 2.5rem 2.5rem;
+  }
+
+  .services__modal-description {
+    padding: 0 3.5rem;
+  }
+
+  .work__container {
+    justify-content: center;
+    grid-template-columns: repeat(2, max-content);
+  }
+
+  .work__img {
+    width: 250px;
+  }
+
+  .testimonial__container {
+    width: 600px;
+    margin: auto;
+  }
+
+  .contact__container {
+    display: grid;
+    grid-template-columns: 220px 340px;
+    column-gap: 2rem;
+    justify-content: center;
+  }
+
+  .contact__info {
+    grid-template-columns: 200px;
+    gap: 1rem;
+  }
+
+  .contact__form {
+    width: 340px;
+  }
+  /* .contact__info {
+    grid-template-columns: 350px;
+    justify-content: center;
+  }
+
+  .contact__form {
+    width: 360px;
+    margin: 0 auto;
+  } */
+}
+
+/* @media screen and (min-width: 767px) {
+  /* .work__container {
+    grid-template-columns: repeat(2, max-content);
+  } */
+
+/* .contact__info {
+    grid-template-columns: 300px;
+  }
+
+  .contact__container {
+    grid-template-columns: repeat(2, 325px);
+    justify-content: center;
+  }
+} */
 
 /* For large devices */
 @media screen and (min-width: 992px) {
@@ -969,9 +1126,7 @@ body.light-theme {
 
   .work__container {
     grid-template-columns: repeat(3, max-content);
-
-       gap: 3rem;          /* skill section on a row  , */
-                                            
+    gap: 3rem;
   }
 
   .work__card {
@@ -996,7 +1151,7 @@ body.light-theme {
 
   .contact__info {
     grid-template-columns: 430px;
-    gap: 1rem; 
+    gap: 1rem;
   }
 
   .contact__form {
@@ -1026,5 +1181,3 @@ body.light-theme {
 .footer__social-link:hover .footer__social-icon {
   transform: scale(3.2); /* Scale up the icon on hover */
 }
-
-
