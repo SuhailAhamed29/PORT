@@ -469,7 +469,7 @@ body.light-theme {
 }
 
 .about__subtitle {
-  font-size: var(--tiny-font-size);
+  font-size: var(--font-medium);
 }
 
 .about__description {
@@ -713,12 +713,13 @@ body.light-theme {
   color: var(--body-color);
 }
 
-/*=============== TESTIMONIAL ===============*/
+
 
 /*=============== CONTACT ===============*/
 .contact__container {
   row-gap: 1rem;
   padding-bottom: 3rem;
+  align-items: center;
  
 }
 
