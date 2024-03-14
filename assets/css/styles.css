@@ -382,13 +382,13 @@ body.light-theme {
   color: #ffffff;
 }
 
-.home__social::after {
+/* .home__social::after {
   content: "";
   width: 32px;
   height: 1px;
   background-color: var(--first-color);
   transform: rotate(90deg) translate(16px, 4px);
-}
+} */
 
 .home__scroll {
   color: var(--first-color);
@@ -954,7 +954,7 @@ body.light-theme {
   }
 
   .skills__content {
-    padding: 4rem 8.8rem;
+    padding: 2rem 0.8rem;
   }
 
   .skills__title {
@@ -1107,7 +1107,7 @@ body.light-theme {
   }
 
   .skills__container {
-    grid-template-columns: repeat(2, 460px);
+    grid-template-columns: repeat(3, 310px);
     column-gap: 3rem;
   }
 
