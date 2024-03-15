@@ -946,6 +946,7 @@ body.light-theme {
 
   .about__box {
     padding: 1.75rem 0.95rem;
+    align-items: center;
   }
 
   .skills__container {

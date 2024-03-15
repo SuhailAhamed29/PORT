@@ -277,3 +277,4 @@ document.querySelectorAll('.view-details-btn').forEach(button => {
 
 
 
+      
