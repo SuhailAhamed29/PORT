@@ -1,3 +1,5 @@
+
+
 /*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 
@@ -13,9 +15,9 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
   */
-  --first-hue: 250;
-  --sat: 66%;
-  --lig: 75%;
+  --first-hue: 0; /* Set hue to 0 for red */
+  --sat: 70%; /* Set saturation to 100% for full intensity */
+  --lig: 50%; /* Set lightness to 50% for a balanced red */
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
@@ -304,18 +306,21 @@ body.light-theme {
 
 .home__data {
   text-align: center;
+  
 }
 
 .home__greeting,
 .home__education {
-  font-size: var(--small-font-size);
+  font-size:var(--h3-font-size);
   font-weight: var(--font-medium);
 }
 
 .home__greeting {
   display: block;
   color: var(--title-color);
-  margin-bottom: 0.25rem;
+  margin-bottom: 
+  0.20rem;
+  font-size:var(--h3-font-size);
 }
 
 .home__education {
@@ -362,7 +367,7 @@ body.light-theme {
 }
 
 .home__social {
-  bottom: 4rem;
+  bottom: 0rem;
   left: 0;
   display: grid;
   row-gap: 0.5rem;
@@ -480,14 +485,16 @@ body.light-theme {
 
 /*=============== SKILLS ===============*/
 .skills__container {
-  row-gap: 2rem;
+  gap: 1rem;
   padding-top: 1rem;
+  
 }
 
 .skills__content {
   background-color: var(--container-color);
   padding: 1.5rem;
   border-radius: 1.25rem;
+  
 }
 
 .skills__title {
@@ -501,7 +508,8 @@ body.light-theme {
 .skills__box {
   display: flex;
   justify-content: center;
-  column-gap: 2.5rem;
+  column-gap: 1.5rem;
+  max-width: 100%;
 }
 
 .skills__group {
@@ -523,13 +531,13 @@ body.light-theme {
 .skills__name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  line-height: 18px;
+  line-height: 15px;
+  white-space: nowrap;
 }
 
 .skills__level {
   font-size: var(--small-font-size);
 }
-
 /*=============== SERVICES ===============*/
 .services__container {
   grid-template-columns: repeat(2, 1fr);
@@ -641,9 +649,12 @@ body.light-theme {
 /*=============== WORK ===============*/
 
 .work__container {
-  padding-top: 1rem;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Center the items vertically */
+  flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+  gap: 2rem; /* Add some space between items */
 }
-
 .work__filters {
   display: flex;
   justify-content: center;
@@ -659,16 +670,18 @@ body.light-theme {
   font-weight: var(--font-medium);
   border-radius: 0.5rem;
 }
-
 .work__card {
   background-color: var(--container-color);
-  padding: 1rem;
+  padding: 1.25rem;
   border-radius: 1rem;
+  width: 300px; /* Set a fixed width for each card */
+  text-align: center; /* Center the content horizontally */
 }
 
 .work__img {
-  border-radius: 1rem;
-  margin-bottom: 0.75rem;
+  width: 100%; /* Make sure the image fills the container */
+  border-radius: 1rem; /* Apply rounded corners to the image */
+  margin-bottom: 1rem; /* Add some space below the image */
 }
 
 .work__title {
@@ -685,6 +698,8 @@ body.light-theme {
   align-items: center;
   column-gap: 0.25rem;
   cursor: pointer;
+  margin-left: 40%;
+  
 }
 
 .work__button:hover .work__icon {
@@ -692,8 +707,9 @@ body.light-theme {
 }
 
 .work__icon {
-  font-size: 1rem;
+  font-size: 1.3rem;
   transition: 0.4s;
+  
 }
 
 /* Active item work*/
@@ -701,6 +717,8 @@ body.light-theme {
   background-color: var(--first-color);
   color: var(--body-color);
 }
+
+
 
 /*=============== TESTIMONIAL ===============*/
 .testimonial__card {
@@ -898,6 +916,7 @@ body.light-theme {
 
   .skills__box {
     column-gap: 1rem;
+    
   }
 
   .skills__name {
@@ -962,17 +981,19 @@ body.light-theme {
   }
 
   .skills__content {
-    padding: 4rem 8.8rem;
+    padding: 2rem 0.8rem;
   }
 
   .skills__title {
     font-size: var(--h3-font-size);
     margin-bottom: 1.5rem;
+    white-space: nowrap;
   }
 
   .skills__box {
     column-gap: 5.5rem;
   }
+
 
   .services__container {
     grid-template-columns: repeat(3, 177px);
@@ -1065,17 +1086,18 @@ body.light-theme {
     height: calc(var(--header-height) + 1rem);
   }
 
-  .home__handle {
+  /* .home__handle {
     width: 290px;
     height: 400px;
-  }
+  } */
 
   .home__img {
     width: 220px;
   }
   .home__social-link {
     padding: 0.4rem;
-    font-size: 1.25rem;
+    font-size: 1.9rem;
+    margin-bottom: 0%;
   }
 
   .home__social::after {
@@ -1116,12 +1138,17 @@ body.light-theme {
   }
 
   .skills__container {
-    grid-template-columns: repeat(2, 460px);
-    column-gap: 3rem;
+    grid-template-columns: repeat(3, 315px);
+    justify-content: center;
+    column-gap: 1rem;
+    margin-left: 18.3%;
   }
+
+  /* 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 */
 
   .skills__title {
     margin-bottom: 3.5rem;
+    
   }
 
   .services__container {
@@ -1134,7 +1161,7 @@ body.light-theme {
   }
 
   .work__container {
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(40, max-content);
     gap: 3rem;
   }
 

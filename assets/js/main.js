@@ -1,5 +1,3 @@
-
-
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
   const header = document.getElementById("header");
@@ -8,7 +6,6 @@ function scrollHeader() {
   else header.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
-
 
 /*=============== SERVICES MODAL ===============*/
 // Get the modal
@@ -235,6 +232,7 @@ sr.reveal(`.footer, footer__container`, {
   distance: "30px",
 });
 
+
 document.addEventListener('DOMContentLoaded', function() {
   // Japanese representation of "Suhail Ahamed"
   var japaneseName = 'スハイル アハメド ハアハ';
@@ -273,8 +271,3 @@ document.querySelectorAll('.view-details-btn').forEach(button => {
     document.body.classList.add('blur-background');
   });
 });
-
-
-
-
-      
