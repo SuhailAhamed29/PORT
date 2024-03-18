@@ -688,6 +688,7 @@ body.light-theme {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
   margin-bottom: 0.25rem;
+  
 }
 
 .work__button {
@@ -707,8 +708,9 @@ body.light-theme {
 }
 
 .work__icon {
-  font-size: 1.3rem;
-  transition: 0.4s;
+  font-size: 1.5rem;
+  transition: 0.9s;
+  margin-left: 70%;
   
 }
 
@@ -1147,7 +1149,7 @@ body.light-theme {
   /* 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 */
 
   .skills__title {
-    margin-bottom: 3.5rem;
+    margin-bottom: 2.5rem;
     
   }
 
@@ -1205,7 +1207,7 @@ body.light-theme {
     grid-template-columns:repeat(1);
     column-gap: 4rem;
     justify-content: center;
-    margin-left: 23%;
+    margin-left: 22.5%;
   }
 
   .footer__social-link {
