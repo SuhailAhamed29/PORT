@@ -397,7 +397,7 @@ body.light-theme {
   transform: rotate(90deg) translate(16px, 4px);
 }
 
-.home__scroll {
+/* .home__scroll {
   color: var(--first-color);
   right: -1.5rem;
   bottom: 4rem;
@@ -413,7 +413,7 @@ body.light-theme {
 .home__scroll-name {
   font-size: var(--smaller-font-size);
   transform: rotate(-90deg);
-}
+} */
 
 /*=============== BUTTONS ===============*/
 .button {
