@@ -1055,8 +1055,8 @@ body.light-theme {
 }
 
 /* @media screen and (min-width: 767px) {
-  /* .work__container {
-    grid-template-columns: repeat(2, max-content);
+   .work__container {
+    grid-template-columns: repeat(9, max-content);
   } */
 
 /* .contact__info {
@@ -1148,6 +1148,7 @@ body.light-theme {
 
   /* 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 */
 
+  
   .skills__title {
     margin-bottom: 2.5rem;
     
@@ -1164,7 +1165,7 @@ body.light-theme {
 
   .work__container {
     grid-template-columns: repeat(40, max-content);
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .work__card {
