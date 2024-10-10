@@ -793,8 +793,17 @@ body.light-theme {
 
 /*=============== CONTACT ===============*/
 .contact__container {
-  row-gap: 3rem;
-  padding-bottom: 3rem;
+  display: flex;                     /* Use flexbox */
+  flex-direction: column;            /* Stack items vertically */
+  align-items: center;               /* Center items horizontally */
+  justify-content: center;           /* Center items vertically */
+  row-gap: 3rem;                    /* Space between items */
+  padding-bottom: 3rem;              /* Bottom padding */
+  margin: 0 auto;                   /* Center the container itself */
+  max-width: 800px;                 /* Set a max-width for better centering */
+  width: 100%;                       /* Make the container full width */
+  padding: 0 1rem;                  /* Optional: Add horizontal padding */
+ 
 }
 
 .contact__title {
@@ -804,17 +813,18 @@ body.light-theme {
 }
 
 .contact__info {
-  display: grid;
-  gap: 1rem;
-  text-align: center;
+  display: grid;                     /* Use grid layout */
+  gap: 1rem;                        /* Space between grid items */
+  text-align: center;               /* Center text inside each grid item */
 }
 
 .contact__card {
   background-color: var(--container-color);
   padding: 2rem 1rem;
   border-radius: 0.75rem;
-  text-align: center;
+  text-align: center;               /* Center text inside the card */
 }
+
 
 .contact__card-icon {
   font-size: 2rem;
@@ -1178,7 +1188,7 @@ body.light-theme {
     grid-template-columns: repeat(3, 315px);
     justify-content: center;
     column-gap: 1rem;
-    margin-left: 18.3%;
+    
   }
 
   /* 99999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999 */
@@ -1243,7 +1253,7 @@ body.light-theme {
     grid-template-columns:repeat(1);
     column-gap: 4rem;
     justify-content: center;
-    margin-left: 22.5%;
+    margin-left: 26%;
   }
 
   .footer__social-link {
