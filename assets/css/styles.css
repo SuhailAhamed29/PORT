@@ -691,12 +691,16 @@ body.light-theme {
   gap: 2rem; /* Add some space between items */
 }
 .work__filters {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 0.75rem;
-  margin-bottom: 2rem;
+  display: flex;                   /* Use flexbox layout */
+  justify-content: center;        /* Center items horizontally */
+  align-items: center;            /* Center items vertically */
+  column-gap: 0.75rem;            /* Space between items */
+  margin: 0 auto;                 /* Center the container itself */
+  margin-bottom: 2rem;            /* Space below the filters */
+  max-width: 100%;                /* Ensure it uses full available width */
+  padding: 0 1rem;                /* Optional: Add horizontal padding */
 }
+
 
 .work__item {
   cursor: pointer;
@@ -739,13 +743,14 @@ body.light-theme {
 }
 
 .work__button:hover .work__icon {
-  transform: translateX(0.25rem);
+  transform: translateX(0.95rem);
 }
 
 .work__icon {
   font-size: 1.5rem;
   transition: 0.9s;
-  margin-left: 70%;
+  margin-left: 50%;
+  
   
 }
 
