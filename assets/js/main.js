@@ -235,7 +235,7 @@ sr.reveal(`.footer, footer__container`, {
 
 document.addEventListener('DOMContentLoaded', function() {
   // Japanese representation of "Suhail Ahamed"
-  var japaneseName = 'スハイル アハメド ハアハ';
+  var japaneseName = 'スハイル アハメド ハア';
   var englishName = 'SUHAIL AHAMED';
 
   // Set the text content to the Japanese representation
@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
   title.style.visibility = 'visible';
 
   // After a delay, change each letter one after another to English
-  var delay = 200; // milliseconds
+  var delay = 150; // milliseconds
 
   for (let i = 0; i < englishName.length; i++) {
     setTimeout(function() {

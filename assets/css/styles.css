@@ -1,74 +1,43 @@
-
-
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
-  /*   
-        Purple: hsl(250, 66%, 75%)
-        Blue: hsl(207, 90%, 72%)
-        Pink: hsl(356, 66%, 75%)
-        Teal: hsl(174, 63%, 62%)
-  */
-  --first-hue: 0; /* Set hue to 0 for red */
-  --sat: 70%; /* Set saturation to 100% for full intensity */
-  --lig: 50%; /* Set lightness to 50% for a balanced red */
+  /* Color mode HSL(hue, saturation, lightness) */
+  --first-hue: 0;
+  --sat: 70%;
+  --lig: 50%;
   --second-hue: 219;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%);
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
-
-  /* default bg colour  */
-  --body-color: hsl(var(--second-hue), 48%, 8%); 
-
-  
-   /* default container colour  */  
+  --body-color: hsl(var(--second-hue), 48%, 8%);
   --container-color: hsl(var(--second-hue), 32%, 12%);
-  
-
-
-    /* --body-color: #000000; Use hex code for true black black background colour */
 
   /*========== Font and typography ==========*/
-  /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Poppins", sans-serif;
-  --biggest-font-size: 1.75rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
+  --biggest-font-size: 5.5rem;
+  --h1-font-size: 1.25rem;
+  --h2-font-size: 1.125rem;
   --h3-font-size: 1rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
+  --normal-font-size: 1rem;
+  --small-font-size: 0.875rem;
   --smaller-font-size: 0.75rem;
   --tiny-font-size: 0.625rem;
 
   /*========== Font weight ==========*/
-  --font-medium: 500;
-  --font-semibold: 600;
+  --font-normal: 400;  /* Normal weight */
+  --font-medium: 500;  /* Medium weight */
+  --font-semibold: 600; /* Semi-bold weight */
 
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
   --z-modal: 1000;
-}
-
-/* Responsive typography */
-@media screen and (min-width: 968px) {
-  :root {
-    --biggest-font-size: 2.5rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: 0.875rem;
-    --smaller-font-size: 0.813rem;
-  }
 }
 
 /*=============== BASE ===============*/
@@ -86,7 +55,7 @@ body,
 button,
 input,
 textarea {
-  font-family: var(--body-font);
+  font-family: "Inter", "Helvetica Neue", "San Francisco", sans-serif; /* Include San Francisco font */
   font-size: var(--normal-font-size);
 }
 
@@ -94,14 +63,18 @@ body {
   background-color: var(--body-color);
   color: var(--text-color);
   transition: 0.4s; /* for light mode animation */
+  font-weight: var(--font-normal); /* Use normal weight */
+
 }
 
-h1,
-h2,
-h3 {
-  color: var(--title-color);
-  font-weight: var(--font-semibold);
+h1, h2, h3 {
+  font-weight: var(--font-semibold); /* Use semi-bold for headings */
 }
+
+p, span, div {
+  font-weight: var(--font-normal); /* Normal weight for paragraphs */
+}
+
 
 ul {
   list-style: none;
@@ -329,7 +302,7 @@ body.light-theme {
   color: var(--title-color);
   margin-bottom: 
   0.20rem;
-  font-size:var(--h3-font-size);
+  font-size:var(--h1-font-size);
 }
 
 .home__education {
