@@ -249,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function() {
   title.style.visibility = 'visible';
 
   // After a delay, change each letter one after another to English
-  var delay = 150; // milliseconds
+  var delay = 200; // milliseconds
 
   for (let i = 0; i < englishName.length; i++) {
     setTimeout(function() {
