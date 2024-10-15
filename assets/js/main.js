@@ -146,91 +146,95 @@ themeButton.addEventListener("click", () => {
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 const sr = ScrollReveal({
   origin: "top",
-  distance: "60px",
-  duration: 2500,
-  delay: 400,
+  distance: "40px", // Reduced distance for a more subtle effect
+  duration: 1000, // Faster duration
+  delay: 100, // Reduced delay for quicker start
   reset: true,
 });
 
 sr.reveal(`.nav__menu`, {
-  delay: 100,
+  delay: 0, // No additional delay
   scale: 0.1,
   origin: "bottom",
-  distance: "300px",
+  distance: "100px", // Reduced distance for a snappier effect
 });
 
-sr.reveal(`.home__data`);
+sr.reveal(`.home__data`, {
+  delay: 50, // Slight delay for stacking effect
+});
+
 sr.reveal(`.home__handle`, {
-  delay: 100,
+  delay: 50,
 });
 
 sr.reveal(`.home__social, .home__scroll`, {
-  delay: 100,
+  delay: 50,
   origin: "bottom",
 });
 
 sr.reveal(`.about__img`, {
-  delay: 100,
+  delay: 50,
   origin: "left",
   scale: 0.9,
-  distance: "30px",
+  distance: "20px", // Reduced distance
 });
 
 sr.reveal(`.about__data, .about__description, .about__button-contact`, {
-  delay: 100,
+  delay: 50,
   scale: 0.9,
   origin: "right",
-  distance: "30px",
+  distance: "20px", // Reduced distance
 });
 
 sr.reveal(`.skills__content`, {
-  delay: 100,
+  delay: 0, // No delay for faster reveal
   scale: 0.9,
   origin: "bottom",
-  distance: "30px",
+  distance: "20px", // Reduced distance
 });
 
-sr.reveal(`.services__title, services__button`, {
-  delay: 100,
+sr.reveal(`.services__title, .services__button`, {
+  delay: 50,
   scale: 0.9,
   origin: "top",
-  distance: "30px",
+  distance: "20px", // Reduced distance
 });
 
 sr.reveal(`.work__card`, {
-  delay: 100,
+  delay: 50,
   scale: 0.9,
   origin: "bottom",
-  distance: "30px",
+  distance: "20px", // Reduced distance
 });
 
 sr.reveal(`.testimonial__container`, {
-  delay: 100,
+  delay: 0, // No delay for faster reveal
   scale: 0.9,
   origin: "bottom",
-  distance: "30px",
+  distance: "20px", // Reduced distance
 });
 
 sr.reveal(`.contact__info, .contact__title-info`, {
-  delay: 100,
+  delay: 0, // No delay for faster reveal
   scale: 0.9,
   origin: "left",
-  distance: "30px",
+  distance: "20px", // Reduced distance
 });
 
 sr.reveal(`.contact__form, .contact__title-form`, {
-  delay: 100,
+  delay: 0, // No delay for faster reveal
   scale: 0.9,
   origin: "right",
-  distance: "30px",
+  distance: "20px", // Reduced distance
 });
 
-sr.reveal(`.footer, footer__container`, {
-  delay: 100,
+sr.reveal(`.footer, .footer__container`, {
+  delay: 0, // No delay for faster reveal
   scale: 0.9,
   origin: "bottom",
-  distance: "30px",
+  distance: "20px", // Reduced distance
 });
+
 
 
 document.addEventListener('DOMContentLoaded', function() {

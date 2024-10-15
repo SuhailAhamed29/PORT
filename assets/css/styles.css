@@ -16,8 +16,15 @@
   --title-color: hsl(var(--second-hue), 15%, 95%);
   --text-color: hsl(var(--second-hue), 8%, 75%);
   --text-color-light: hsl(var(--second-hue), 4%, 55%);
-  --body-color: hsl(var(--second-hue), 48%, 8%);
-  --container-color: hsl(var(--second-hue), 32%, 12%);
+  --body-color:#111111; /* Pure black */
+  --container-color: rgba(255, 255, 255, 0.05); /* Very light transparent overlay */
+
+
+
+
+
+  /* --body-color: hsl(var(--second-hue), 48%, 8%);
+  --container-color: hsl(var(--second-hue), 32%, 12%); */
 
   /*========== Font and typography ==========*/
   --biggest-font-size: 5.5rem;
@@ -497,6 +504,29 @@ body.light-theme {
   padding-top: 1rem;
   
 }
+
+.skills__icon {
+  display: inline-block;
+  width: 20px; /* Adjust size */
+  height: 20px; /* Adjust size */
+  border-radius: 50%;
+  background: linear-gradient(#000000);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  transition: transform 0.3s;
+}
+
+.skills__icon i {
+  font-size: 20px; /* Icon size */
+}
+
+.skills__data:hover .skills__icon {
+  transform: scale(1.1); /* Hover effect */
+}
+
 
 .skills__content {
   background-color: var(--container-color);
