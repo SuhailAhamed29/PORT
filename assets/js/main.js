@@ -275,3 +275,4 @@ document.querySelectorAll('.view-details-btn').forEach(button => {
     document.body.classList.add('blur-background');
   });
 });
+
