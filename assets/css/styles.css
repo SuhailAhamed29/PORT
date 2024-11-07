@@ -318,8 +318,9 @@ body.light-theme {
 }
 
 .home__name {
-  font-size: var(--biggest-font-size);
+  font-size:  490%; /* Adjust size as needed */
   color: var(--first-color);
+  
 }
 
 .home__img {
