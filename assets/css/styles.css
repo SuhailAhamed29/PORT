@@ -243,7 +243,7 @@ body.light-theme {
 .nav__menu {
   position: fixed;
   bottom: 1rem;
-  background-color: hsla(var(--second-hue), 32%, 16%, 0.8);
+  background-color: rgb(18, 18, 18);
   width: 90%;
   border-radius: 4rem;
   padding: 1rem 2.25rem;
@@ -263,10 +263,21 @@ body.light-theme {
   padding: 0.4rem;
   font-weight: var(--font-medium);
   text-decoration: none;
-  transition: 0.4s;
   display: flex;
-  border-radius: 5rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20%;
+  
+  transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1), color 0.3s, box-shadow 0.4s;
 }
+
+.nav__link:hover {
+  transform: scale(1.7) translateY(-5%);
+  color: var(--first-color);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  background-color: transparent; /* Ensure background remains transparent */
+}
+
 
 /* Active link */
 .active-link {
