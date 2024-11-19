@@ -942,7 +942,7 @@ body.light-theme {
 .footer__copy {
   display: block;
   margin-top: 4.5rem;
-  color: var(--container-color);
+  color:#000000;
   text-align: center;
   font-size: var(--smaller-font-size);
   margin-bottom: 2rem;
