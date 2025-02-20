@@ -435,3 +435,82 @@ p {
 .contact-link:hover {
     color: #005bb5; /* Slightly darker blue on hover */
 }
+
+
+
+/* 📱 Mobile Styles (for screens smaller than 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 20px 10%; /* Reduce left & right padding for smaller screens */
+    }
+
+    #landing .home__name {
+        font-size: 3rem; /* Reduce heading size for better fit */
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr; /* Stack projects vertically */
+    }
+
+    .project-card {
+        flex-direction: column; /* Change to column layout */
+        text-align: center;
+        padding: 15px;
+    }
+
+    .project-image {
+        margin: 0 auto 10px auto; /* Center project images */
+    }
+
+    .skill-logos {
+        flex-wrap: wrap; /* Allow wrapping */
+        justify-content: center; /* Center skills */
+    }
+
+    .experience-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .button-container {
+        flex-direction: column; /* Stack buttons */
+        align-items: center;
+    }
+
+    .shimmer-button {
+        width: 100%; /* Make buttons full-width */
+    }
+}
+
+/* 📱 Extra Small Screens (for screens smaller than 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 15px 5%; /* Reduce padding further */
+    }
+
+    #landing .home__name {
+        font-size: 2.5rem; /* Adjust font size */
+    }
+
+    .shimmer-button {
+        font-size: 18px; /* Reduce button text size */
+        padding: 8px 15px;
+    }
+
+    .project-card {
+        padding: 10px;
+    }
+
+    .project-title {
+        font-size: 1.1rem;
+    }
+
+    .experience-item {
+        font-size: 14px;
+    }
+
+    .skill-logos img {
+        width: 40px; /* Adjust skill icon size */
+        height: 40px;
+    }
+}
