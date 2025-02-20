@@ -1,0 +1,433 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: url('fonts/SF-Pro.dmg') format('opentype');font-family: "Inter", "Helvetica Neue", "San Francisco", sans-serif; /* Include San Francisco font */
+}
+html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: #e0dfdf;
+    font-family: 'SF Pro', sans-serif;
+    margin: 0;
+    padding: 20px 25%;  /* 25% padding on left and right */
+    box-sizing: border-box; /* Ensures padding doesn’t break the layout */
+}
+
+
+.hello-text {
+    color: #e0dfdf;
+    
+}
+
+#landing {
+    text-align: center;
+    padding-top: 100px; 
+}
+
+#landing .home__name {
+    font-size: 4rem;
+    font-weight: bold;
+    color: yellow; /* Pulp Fiction yellow color */
+    font-family: 'Aachen Bold', Arial, sans-serif;
+    visibility: hidden;
+    position: relative;
+    padding-bottom: 1%;
+}
+
+#landing h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color:#e0dfdf;
+}
+
+@font-face {
+    font-family: 'Aachen Bold';
+    src: url('fonts/Aachen Bold.ttf') format('truetype');
+}
+
+.home__name {
+    font-family: 'Django Ink';
+    visibility: hidden;
+}
+
+
+
+/* describtion */
+.cursor {
+    display: inline-block;
+    font-weight: bold;
+    color: #ffffff;
+    animation: blink 0.7s infinite;
+}
+.highlight {
+    font-weight: bold;
+    color: #007AFF; /* Apple's iOS/macOS Blue */
+}
+.bi-arrow-right-short {
+    font-size: 2rem; /* Adjust the size */
+    color:#87ad8d; /* Apple macOS blue */
+    margin-right: 5px; /* Adds space between arrow and text */
+    vertical-align: middle; /* Aligns properly with text */
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Shimmer Button Styling */
+/* Shimmer Button Styling */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.shimmer-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #94a3b8;
+    background: linear-gradient(110deg, #000103 45%, #1e2631 55%, #000103);
+    background-size: 200% 100%;
+    border: 1px solid #1e293b; /* Inner border */
+    border-radius: 5px;
+    cursor: pointer;
+    animation: shimmer 2s linear infinite;
+    transition: color 0.2s, transform 0.1s;
+}
+
+.shimmer-button:hover {
+    color: #ffffff; /* Brighten the text color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.shimmer-button:active {
+    transform: scale(0.95); /* Scale down slightly on click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow when pressed */
+}
+
+.shimmer-button:focus {
+    outline: none;
+}
+
+
+
+@keyframes shimmer {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: -200% 0;
+    }
+}
+
+
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.5;
+  
+
+}
+
+.skill-logos {
+    display: flex;
+    flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
+    justify-content: flex-start; /* Aligns items to the left */
+    gap: 1em;
+    margin-top: 1em;
+    
+    box-sizing: border-box; /* Prevents layout issues */
+}
+
+
+
+.skill-logos img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.skill-logos img:hover {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+}
+
+@font-face {
+    font-family: 'SF Pro';
+    src: url('fonts/SF-Pro.dmg') format('opentype');font-family: "Inter", "Helvetica Neue", "San Francisco", sans-serif; /* Include San Francisco font */
+    font-weight: normal;
+    font-style: normal;
+}
+.section-title {
+    
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e0dfdf;
+    margin-top: 50px;
+}
+
+.experience-container {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.experience-item {
+    background-color: #0c0c0c;
+    color: #e8e8e8;
+    font-family: 'SF Pro', sans-serif; /* Use the same font as body */
+
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.experience-item:hover {
+    background-color: #333;
+}
+
+.dropdown-icon {
+    transition: transform 0.3s ease;
+}
+
+.experience-details {
+    max-height: 0;
+    overflow: hidden;
+    background-color: #1c1c1c;
+    color: white;
+    padding: 0 20px;
+    list-style-type: disc;
+    margin: 0;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+.experience-details li {
+    margin: 5px 0;
+}
+
+/* Projects Section */
+/* Projects Section - Remove Extra Space */
+#projects {
+    margin-top: 20px; /* Reduced space above */
+    padding: 10px 0; /* Reduced padding top & bottom */
+}
+
+
+/* Projects Container - Two Columns */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two projects per row */
+    gap: 40px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Project Card - Image on Left, Text on Right */
+.project-card {
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    border-radius: 15px;
+    padding: 20px;
+    width: 90%;
+    height: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+/* Project Image - Small & Aligned to Left */
+.project-image {
+    width: 80px; /* Adjusted size */
+    height: 80px;
+    border-radius: 50%; /* Circular shape */
+    object-fit: cover;
+    margin-right: 15px; /* Space between image and text */
+    margin-bottom: 30%;
+}
+
+/* Project Content - Aligned to Right */
+.project-content {
+    flex: 1;
+    text-align: left;
+}
+/* Project Card - Add Thin White Border */
+.project-card {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    border-radius: 15px;
+    padding: 20px;
+    width: 95%;
+    height: 90%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease, border 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Thin White Border */
+}
+
+/* Hover Effect - Change Background Color */
+.project-card:hover {
+    transform: scale(1.02);
+    background-color: #0c0c0c; /* Slightly lighter background on hover */
+    border-color: white; /* Change border to solid white */
+}
+
+/* Project Title */
+.project-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #e0dfdf;
+    margin-bottom: 5px;
+    position: relative;
+    top: -1px; /* Move title slightly up */
+}
+
+/* Project Description */
+.project-description {
+    font-size: 0.9rem;
+    color: #bcbec2;
+    line-height: 1.5;
+    margin-bottom: 15px;
+
+}
+
+/* Buttons */
+.project-links {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+/* Live Link Button */
+.live-link {
+    background-color: #007AFF;
+    color: white;
+}
+
+.live-link:hover {
+    background-color: #005bb5;
+}
+
+/* GitHub Button */
+.github-link {
+    background-color: #24292e;
+    color: white;
+}
+
+.github-link:hover {
+    background-color:  #005bb5;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+    .projects-container {
+        grid-template-columns: 1fr; /* Stack projects in mobile view */
+    }
+
+    .project-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .project-image {
+        margin: 0 0 10px 0;
+    }
+}
+
+
+/* Achievements Section */
+#achievements ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#achievements li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+/* Make Achievements a Clickable Link */
+.hover-preview {
+    color: #cac9c9; /* MacBook iOS Blue */
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.hover-preview:hover {
+    color: #005bb5; /* Darker blue on hover */
+}
+
+/* Floating Image Preview */
+/* Floating Image Preview */
+#preview-box {
+    position: fixed;
+    
+    padding: 10px; 
+    border-radius: 20px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.15s ease-out;
+    transform: scale(1);
+}
+
+#preview-image, .skill-logos img {
+    width: 170px;  /* Set a fixed width */
+    height: 110px; /* Set a fixed height */
+    border-radius: 20px; /* Smooth rounded corners */
+    object-fit: cover; /* Ensures image maintains aspect ratio */
+}
+
+
+
+
+
+
+.contact-link {
+    color: #007AFF; /* MacBook-style blue */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: #005bb5; /* Slightly darker blue on hover */
+}

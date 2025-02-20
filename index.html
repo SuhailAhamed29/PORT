@@ -1,686 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahamed's Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
-    <!--=============== FAVICON ===============-->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicons/site.webmanifest">
-    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="assets/favicons/browserconfig.xml">
-    <!-- <meta name="theme-color" content="#a789d4"> -->
 
-    <!--=============== BOXICONS ===============-->
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-
-    <title> Suhail's Portfolio </title>
-
-    <link rel="icon" type="image/png" href=".//assets/img/ee-removebg-preview.png">
 </head>
-
 <body>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-        <nav class="nav container">
-            <a href="#" class="nav__logo">PORTFOLIO</a>
+
     
-            <div class="nav__menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="#home" class="nav__link" title="Home">
-                            <i class="bx bx-home"></i>
-                        </a>
-                    </li>
-    
-                    <li class="nav__item">
-                        <a href="#about" class="nav__link" title="About">
-                            <i class="bx bx-user"></i>
-                        </a>
-                    </li>
-    
-                    <li class="nav__item">
-                        <a href="#skills" class="nav__link" title="Skills">
-                            <i class="bx bx-book"></i>
-                        </a>
-                    </li>
-    
-                    <li class="nav__item">
-                        <a href="#work" class="nav__link" title="Work">
-                            <i class="bx bx-briefcase-alt-2"></i>
-                        </a>
-                    </li>
-    
-                    <li class="nav__item">
-                        <a href="#contact" class="nav__link" title="Contact">
-                            <i class="bx bx-message-square-dots"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-    
-            <!--=============== theme change button ===============-->
-            <i class="bx bx-moon change-theme change-theme-button" id="theme-button"></i>
-        </nav>
-    </header>
-    
-    <!--=============== MAIN ===============-->
-    <main class="main">
-        <!--=============== HOME ===============-->
-        <section class="home section" id="home">
-            <div class="home__container container grid">
-                <div class="home__data">
-                    <span class="home__greeting">&gt;_ Hello I'm</span>
-                    <h1 class="home__name"> SUHAIL AHAMED</h1>
-                    <h3 class="home__education">FullStack Web Developer</h3>
-
-                    <div class="home__button">
-                        <a download="" href="./assets/pdf/RESUME_SUHAIL.pdf" class="button button--ghost">
-                            Download Resume
-                        </a>
-
-                        <a href="#about" class="button">About</a>
-                    </div>
-                </div>
-
-                
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/suhail29/" target="_blank" class="home__social-link">
-                        <i class='bx bxl-linkedin'></i>
-                    </a>
-                    <a href="https://github.com/SuhailAhamed29" target="_blank" class="home__social-link">
-                        <i class='bx bxl-github'></i>
-                    </a>
-                    <!-- <a href="#" target="_blank" class="home__social-link">
-                        <i class='bx bxl-dribbble'></i>
-                    </a> -->
-                </div>
-
-                <!--<a href="#about" class="home__scroll">
-                    <i class='bx bx-mouse home__scroll-icon'></i>
-                    <span class="home__scroll-name">Scroll Down</span>
-                </a> -->
-            </div>
-        </section>
-
-        <!--=============== ABOUT ===============-->
-        <section class="about section" id="about">
-            <!-- <span class="section__subtitle">My Intro</span> -->
-            <h2 class="section__title">About Me</h2>
-
-            <div class="about__container container grid">
-                <img src="./assets/img/Profile Picture.jpg" alt="" class="about__img">
-
-                <div class="about__data">
-                    <div class="about__info">
-                        <div class="about__box">
-                            <i class='bx bx-award about__icon'></i>
-                            <h3 class="about__title"> Experience</h3>
-                            <span class="about__subtitle"><h2> Cyber Security Intern </h2></span>
-                        </div>
-                        <div class="about__box">
-                            <i class='bx bxs-graduation about__icon'></i>
-                            <h3 class="about__title">Education</h3>
-                            <span class="about__subtitle"><h2> BCA from  ISBR COLLEGE </h2></span>
-                        </div>
-                        <!-- <div class="about__box">
-                            <i class='bx bx-support about__icon'></i>
-                            <h3 class="about__title">Support</h3>
-                            <span class="about__subtitle">Online 24/7</span>
-                        </div> -->
-                    </div>
-
-                    <p class="about__description">
-                        Skilled Web Developer with expertise in Python and Django. Proficient in HTML, CSS, JavaScript,
-                        AWS, MySQL, Linux, API, GitHub, and Networking. Eager to contribute to a dynamic development
-                        team, applying strong programming and design skills as a fresher.
-                    </p>
-
-                    <a href="#contact" class="button about__button-contact">Contact Me</a>
-                </div>
-            </div>
-        </section>
-
-        <!--=============== SKILLS ===============-->
-        <section class="skills section" id="skills">
-            <h2 class="section__title">My Skills</h2>
-        
-            <div class="skills__container container grid">
-                <div class="skills__content">
-                    <h3 class="skills__title">Frontend Development</h3>
-        
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-code"></i></div>
-                                <div>
-                                    <h3 class="skills__name">HTML/CSS</h3>
-                                </div>
-                            </div>
-        
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-laptop-code"></i></div>
-                                <div>
-                                    <h3 class="skills__name">JavaScript</h3>
-                                </div>
-                            </div>
-        
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-paint-brush"></i></div>
-                                <div>
-                                    <h3 class="skills__name">Figma</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="skills__content">
-                    <h3 class="skills__title">Backend Development</h3>
-        
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-python"></i></div>
-                                <div>
-                                    <h3 class="skills__name">Python</h3>
-                                </div>
-                            </div>
-        
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-code-branch"></i></div>
-                                <div>
-                                    <h3 class="skills__name">Django Framework</h3>
-                                </div>
-                            </div>
-        
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fab fa-php"></i></div>
-                                <div>
-                                    <h3 class="skills__name">PHP</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="skills__content">
-                    <h3 class="skills__title">Database & API</h3>
-        
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-database"></i></div>
-                                <div>
-                                    <h3 class="skills__name">SQL</h3>
-                                </div>
-                            </div>
-        
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-database"></i></div>
-                                <div>
-                                    <h3 class="skills__name">SQLite</h3>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-plug"></i></div>
-                                <div>
-                                    <h3 class="skills__name">API</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="skills__content">
-                    <h3 class="skills__title">Deployment</h3>
-        
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fab fa-aws"></i></div>
-                                <div>
-                                    <h3 class="skills__name">AWS</h3>
-                                </div>
-                            </div>
-        
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fab fa-github"></i></div>
-                                <div>
-                                    <h3 class="skills__name">Git/Github</h3>
-                                </div>
-                            </div>
-        
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fab fa-linux"></i></div>
-                                <div>
-                                    <h3 class="skills__name">Linux</h3>
-                                </div>
-                            </div>
-                            <!-- <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-tools"></i></div>
-                                <div>
-                                    <h3 class="skills__name">CI/CD Tools</h3>
-                                </div>
-                            </div> -->
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="skills__content">
-                    <h3 class="skills__title">Networking</h3>
-        
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-network-wired"></i></div>
-                                <div>
-                                    <h3 class="skills__name">TCP/IP Protocol Suite</h3>
-                                </div>
-                            </div>
-        
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-shield-alt"></i></div>
-                                <div>
-                                    <h3 class="skills__name">Network Security</h3>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-cog"></i></div>
-                                <div>
-                                    <h3 class="skills__name">Network Configuration</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="skills__content">
-                    <h3 class="skills__title">Cybersecurity Fundamentals</h3>
-        
-                    <div class="skills__box">
-                        <div class="skills__group">
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-lock"></i></div>
-                                <div>
-                                    <h3 class="skills__name">Vulnerability Testing</h3>
-                                </div>
-                            </div>
-        
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-user-shield"></i></div>
-                                <div>
-                                    <h3 class="skills__name">SQL Injection</h3>
-                                </div>
-                            </div>
-                            <div class="skills__data">
-                                <div class="skills__icon"><i class="fas fa-exclamation-triangle"></i></div>
-                                <div>
-                                    <h3 class="skills__name">Cyber Threats</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Add the following link in your <head> section to use Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        
-        
-
-        <!--=============== SERVICES ===============--------------------------------------------------------------------------->
-        <!-- <section class="services section">
-            <h2 class="section__title">Services</h2>
-        
-            <div class="services__container container grid">
-                <div class="services__card">
-                    <div class="serv">
-                        <h3 class="services__title">Web Development</h3>
-        
-                        <span class="services__button">
-                            See More <i class='bx bx-right-arrow services__icon'></i>
-                        </span>
-                    </div>
-        
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-        
-                            <h3 class="services__modal-title">Web Development</h3>
-        
-                            <p class="services__modal-description">
-                                With expertise in HTML, CSS, JavaScript, Python, and Django, I offer comprehensive web development services. From designing user interfaces to backend development, I ensure high-quality solutions tailored to your needs.
-                            </p>
-        
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Frontend and backend development using modern technologies.
-                                    </p>
-                                </li>
-        
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Responsive web design for optimal user experience across devices.
-                                    </p>
-                                </li>
-        
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Integration of APIs and third-party services for enhanced functionality.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="services__card">
-                    <h3 class="services__title">Backend Development</h3>
-        
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-        
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-        
-                            <h3 class="services__modal-title">Backend Development</h3>
-        
-                            <p class="services__modal-description">
-                                I specialize in backend development using Python and Django, ensuring robust and scalable solutions. From database design to server-side logic, I handle the technical aspects to support your web applications' functionality and performance.
-                            </p>
-        
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Database management and optimization for efficient data storage.
-                                    </p>
-                                </li>
-        
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        RESTful API development for seamless communication between frontend and backend.
-                                    </p>
-                                </li>
-        
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Authentication and authorization implementation for secure access control.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-        
-                <div class="services__card">
-                    <h3 class="services__title">Cloud Services</h3>
-        
-                    <span class="services__button">
-                        See More <i class='bx bx-right-arrow services__icon'></i>
-                    </span>
-        
-                    <div class="services__modal">
-                        <div class="services__modal-content">
-                            <i class='bx bx-x services__modal-close'></i>
-        
-                            <h3 class="services__modal-title">Cloud Services</h3>
-        
-                            <p class="services__modal-description">
-                                I offer expertise in cloud services, including AWS, for deploying and scaling web applications. From infrastructure setup to continuous integration and deployment, I ensure seamless operation and reliability in the cloud environment.
-                            </p>
-        
-                            <ul class="services__modal-list">
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Deployment and management of web applications on AWS infrastructure.
-                                    </p>
-                                </li>
-        
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Configuration of scalable and reliable cloud-based solutions.
-                                    </p>
-                                </li>
-        
-                                <li class="services__modal-item">
-                                    <i class='bx bx-check-circle'></i>
-                                    <p class="services__modal-info">
-                                        Implementation of monitoring and logging for performance optimization and troubleshooting.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!--=============== WORK ===============-->
-        <section class="work section" id="work">
+    <div class="container">
+        <section id="landing" class="section visible">
+            <h1 class="hello-text">&gt;_ Hello I'm</h1>
+            <h1 class="home__name gradient-text">スハイル アハメド</h1>
+            <!-- <h2 class="typewriter-container">
+                <i class="bi bi-arrow-right-short"></i> 
+                <span id="typewriter-text"></span><span class="cursor">|</span>
+            </h2> -->
+            <h2 class="typewriter-container">
+                <i class="bi bi-arrow-right-short"></i> 
+                I develop and contribute to <span class="highlight">Open Source Full Stack apps</span> 
+                and <span class="highlight">specialize in CyberSecurity....</span>
+            </h2>
             
-            <h2 class="section__title">Recent Works</h2>
-            <div class="work__filters">
-                <span class="work__item active-work" data-filter='all'>All</span>
-                <span class=" work__item" data-filter='.web'>Web Applications</span>
-                <span class=" work__item" data-filter='.movil'>Management Systems</span>
-                <!-- <span class=" work__item" data-filter='.design'>Design</span> -->
+            
+            
+            
+            
+        </section>
+
+        <!-- Updated Download Resume Button with Shimmer Effect -->
+        <div class="button-container">
+            <a href="docs/Suhail_Resume.pdf" download>
+                <button class="shimmer-button">Resume</button>
+            </a>
+        </div>
+    </div>
+
+    <section id="about-me">
+        <h1>About me</h1>
+        <p>Experienced in desktop support, cybersecurity, and full-stack development with skills in networking, Linux, Python, and JavaScript. Holds certifications in React.js, Python, and Agile.</p>
+        <!-- <h2>Education</h2>
+    <p>
+        <strong>Bachelor of Computer Applications (BCA)</strong><br>  
+        ISBR - International School of Business Research, Bangalore University
+        CGPA: 7.7 <br> 2020 – 2023
+    </p> -->
+    </section>
+    <section id="skills">
+        <h1>Skills</h1>
+        <div class="skill-logos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg" alt="Linux" title="Linux">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" title="Python">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" title="JavaScript">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Git_icon.svg" alt="Git" title="Git">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" title="GitHub">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" title="React">
+            <img src="https://static.djangoproject.com/img/logos/django-logo-positive.svg" alt="Django" title="Django">
+            <img src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg" alt="MySQL" title="MySQL">
+        </div>
+        
+        
+    </section>
+
+    <section id=" experiece">
+
+        <h1 class="section-title">Experience</h1>
+
+        <div class="experience-container">
+            <div class="experience-item" onclick="toggleDetails(this)">
+                <span class="job-title">
+                     Desktop Support Engineer | Unique Technologies Pvt Ltd 12/2023 - 11/2024
+                </span>
+                <span class="dropdown-icon">▼</span>
             </div>
+            <ul class="experience-details">
+                <li>Configured MS Outlook and created PST files for efficient email management.</li>
+                <li>Installed and configured Windows 10 and 11 OS on desktops and laptops.</li>
+                <li>Provided L1 technical support for hardware and software, and Remote Desktop Services.</li>
+                <li>Diagnosed and resolved network connectivity and printer configuration issues.</li>
+                <li>Delivered network troubleshooting and hardware issue resolution.</li>
+            </ul>
+        </div>
+        
+        <div class="experience-container">
+            <div class="experience-item" onclick="toggleDetails(this)">
+                <span class="job-title">
+                     Cyber Security Intern | Internz Learn 10/2023 - 12/2023
+                </span>
+                <span class="dropdown-icon">▼</span>
+            </div>
+            <ul class="experience-details">
+                <li>Basic understanding of firewalls and VPNs in network security.</li>
+                <li>Identified and mitigated cyber threats such as malware and DoS attacks.</li>
+                <li>Utilized Nmap for port scanning.</li>
+                <li>Explored ethical hacking techniques like footprinting and SQL injection.</li>
+            </ul>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h1 class="section-title">Projects</h1>
+    
+        <div class="projects-container">
+    
+            <!-- Project 1 -->
+            <div class="project-card">
+                <img src="assests/isbr.webp" alt="Project Name" class="project-image">
+                <div class="project-content">
+                    <h2 class="project-title">ISBR College Management System (CMS)</h2>
+                    <p class="project-description">
+                        <li>
+                            The admin manages courses, staff, and student profiles.
+                        </li>
+                            <li>Staff can mark attendance, assign marks, and request leave, while students can view their details, request leave, and raise complaints.
 
-            <div class="work__container container grid">
-                <div class="work__card mix web">
-                    <img src="./assets/img/190117125226_1_Copy.webp" alt="" class="work__img">
-
-                    <h3 class="work__title">ISBR CMS</h3>
-
-                    <a href="https://github.com/SuhailAhamed29/CMS" target="_blank" class="work__button">
-                        <i class='bx bxl-github work__icon'></i>
-                   </a>
-                </div>
-
-                <div class="work__card mix web">
-                    <img src="assets/img/back-view-of-crowd-of-people-raising-hands-on-a-seminar-in-convention-center.webp" alt="" class="work__img">
-
-                    <h3 class="work__title">Attendance Management System </h3>
-
-                    <a href="https://github.com/SuhailAhamed29/ISBR---Attendance-Management-System-Project" target="_blank" class="work__button">
-                         <i class='bx bxl-github work__icon' ></i>
-                    </a>
-                </div>
-
-
-                <div class="work__card mix movil">
-                    <img src="assets/img/teaser-customer-relationship-management.png" alt="" class="work__img">
-
-                    <h3 class="work__title">Django CRM</h3>
-
-                    <a href="https://github.com/SuhailAhamed29/crm" target="_blank" class="work__button">
-                         <i class='bx bxl-github work__icon' ></i>
-                    </a>
-                </div>
-
-
-
-
-        </section> 
-
-        <!--=============== CONTACT ===============-->
-        <section class="contact section" id="contact">
-            <sapn class="section__subtitle">Get in touch</sapn>
-            <h3 class="section__title">Contact Me</h3>
-
-            <div class="contact__container container grid">
-                <div class="contact__content">
-                  
-
-
-
-                    <div class="contact__info">
-                        <div class="contact__card">
-                            <i class='bx bx-mail-send contact__card-icon'></i>
-                            <h3 class="contact__card-title">Email</h3>
-                            <span class="contact__card-data">suhail.d4971@gmail.com</span>
-                        
-                            <a href="mailto:suhail.d4971@gmail.com?subject=Hello&body=Hi Suhail," target="_blank" class="contact__button">
-                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
-                            </a>
-                        </div>
-
-
-                        <div class="contact__card">
-                            <i class='bx bxl-whatsapp contact__card-icon'></i>
-                            <h3 class="contact__card-title">Whatsapp</h3>
-                            <span class="contact__card-data">8870595877</span>
-
-                            <a href="https://api.whatsapp.com/send?phone=+918870595877&text=Hey there!" target="_blank"
-                                class="contact__button">
-                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
-                            </a>
-                        </div>
-
-                        <div class="contact__card">
-                            <i class='bx bxl-linkedin contact__card-icon'></i>
-                            <h3 class="contact__card-title">linkedin</h3>
-                            <span class="contact__card-data">suhail29/</span>
-
-                            <a href="https://www.linkedin.com/in/suhail29/" target="_blank" class="contact__button">
-                                Write Me <i class='bx bx-right-arrow contact__button-icon'></i>
-                            </a>
-                        </div>
-                        <div class="contact__card">
-                            <i class='bx bx-phone contact__card-icon'></i>
-
-                            <h3 class="contact__card-title">8870595877</h3>
-                            <!-- <span class="contact__card-data">suhail29/</span> -->
-                        
-                            <!-- Adding the phone icon with the phone number -->
-                            <a href="tel:+918870595877" class="contact__button">
-                                Call Me <i class='bx bx-phone contact__button-icon'></i>
-                            </a>
-                        </div>
+                            </li>
+                    </p>
+                    <div class="project-links">
+                        <!-- <a href="https://your-live-link.com" class="btn live-link" target="_blank">Live Link</a> -->
+                        <a href="https://github.com/SuhailAhamed29/CMS" class="btn github-link" target="_blank">GitHub</a>
                     </div>
                 </div>
-
-                <!-- <div class="contact__content">
-                    <h3 class="contact__title contact__title-form">Write Me your Message</h3>
-
-                    <form action="" class="contact__form">
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Name</label>
-                            <input type="text" placeholder="Enter name" class="contact__form-input">
-                        </div>
-
-                        <div class="contact__form-div">
-                            <label for="" class="contact__form-tag">Mail</label>
-                            <input type="text" placeholder="Enter email" class="contact__form-input">
-                        </div>
-
-                        <div class="contact__form-div contact__form-area">
-                            <label for="" class="contact__form-tag">Message</label>
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Write your Message"
-                                class="contact__form-input "></textarea>
-                        </div>
-
-
-                        <button class="button">
-                            Send Message
-                        </button>
-                    </form>
-
-                </div> -->
-
-        </section>
-    </main>
-
-    <!--=============== FOOTER ===============-->
-    <footer class="footer">
-        <div class="footer__container container">
-            <h1 class="footer__title"></h1>
-
-            <ul class="footer__list">
-
-                <li class="footer__item">
-                    <a href="#" class="footer__link">Home</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#about" class="footer__link">About</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#skills" class="footer__link">Skills</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#work" class="footer__link">Work</a>
-                </li>
-                <li class="footer__item">
-                    <a href="#contact" class="footer__link">Contact</a>
-                </li>
-            </ul>
-
-            <ul class="footer__social">
-                <li class="footer__social-item">
-                    <a href="https://www.linkedin.com/in/suhail29/" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-linkedin footer__social-icon'></i>
-                    </a>
-                </li>
-                <li class="footer__social-item">
-                    <a href="https://github.com/SuhailAhamed29" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-github footer__social-icon'></i>
-                    </a>
-                </li>
-                <li class="footer__social-item">
-                    <a href="mailto:suhail.d4971@gmail.com" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-gmail footer__social-icon'></i>
-                    </a>
-                </li>
-                <!-- <li class="footer__social-item">
-                    <a href="#" target="_blank" class="footer__social-link">
-                        <i class='bx bxl-instagram footer__social-icon'></i>
-                    </a>
-                </li> -->
-            </ul>
-            <span class="footer__copy">
-                <p>&#169; 2024 <a href="#">Suhail Ahamed</a>. All rights reserved.</p>
-            </span>
+            </div>
+    
+            <!-- Project 2 -->
+            <div class="project-card">
+                <img src="assests/crm.png" alt="Network Scanner" class="project-image">
+                <div class="project-content">
+                    <h2 class="project-title">Django CRM</h2>
+                    <p class="project-description">
+                        <li>Developed a CRM web application using Django, Python, and MySQL with user authentication and record management.</li>
+                        <li>Implemented CRUD operations, integrated Bootstrap for UI, and used Git for version control.</li>
+                    </p>
+                    <div class="project-links">
+                        <!-- <a href="https://your-live-link.com" class="btn live-link" target="_blank">Live Link</a> -->
+                        <a href="https://github.com/SuhailAhamed29/crm" class="btn github-link" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+    
         </div>
-    </footer>
+    </section>
+    
+    
+    <section id="achievements">
+        <h1>Achievements</h1>
+        <ul>
+            <li>
+                <a href="https://drive.google.com/drive/folders/1CchfmzqgBNFin-nWzgac_-1uBxqFvA6K?usp=sharing" target="_blank" class="hover-preview"
+                   data-image="images/CS-Internship.png">
+                    Cyber Security Training & Internship
+                </a>
+            </li>
+           
+            <li>
+                <a href="https://www.guvi.in/verify-certificate?id=213Js2n91XO3876wu5" target="_blank" class="hover-preview"
+                data-image="images/guvi.png">
 
-    <!--=============== SCROLLREVEAL ===============-->
+                    Python Certification
+                </a>
+            </li>
+            <li>
+                <a href="https://drive.google.com/file/d/1rYgY702BMpvw11Q1TLd0impJSRh3kU11/view?usp=sharing" target="_blank" class="hover-preview"
+                data-image="images/forage.png">
 
-    <!-- <script src="assets/js/scrollreveal.min.js"></script> -->
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+                    Agile Program
+                </a>
+            </li>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
+            <li>
+                <a href="https://drive.google.com/file/d/19qHCpqq_sN7YbAeAzbQm7a3DUIq1vDYw/view?usp=sharing" target="_blank" class="hover-preview"
+                data-image="images/react.png">
 
-    <!--=============== MIXITUP FILTER ===============-->
-    <script src="assets/js/mixitup.min.js"></script>
+                    React.js Certification
+                </a>
+            </li>
+        </ul>
+    </section>
+    
+    
+    
+    <!-- Floating Preview Box -->
+    <div id="preview-box">
+        <img id="preview-image" src="" alt="Preview">
+    </div>
+    
+    
 
-    <!--=============== MAIN JS ===============-->
-    <script src="assets/js/main.js"></script>
+    <section id = "footer">
+        <p style="justify-content: center; margin-left: 25%; margin-top: 10%;">🔗 Let’s stay connected:  
+            <a href="mailto:suhail.d4971@gmail.com" target="_blank" class="contact-link">Gmail</a>  
+            and  
+            <a href="https://www.linkedin.com/in/suhail29/" target="_blank" class="contact-link">LinkedIn</a>.
+        </p>
+        
+    </section>
+    
+    
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="scripts.js"></script>
+
 </body>
-
 </html>
