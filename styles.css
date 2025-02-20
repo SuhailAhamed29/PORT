@@ -464,92 +464,66 @@ p {
 
 
 
-/* 📱 Mobile Styles (for screens smaller than 768px, like small monitors & mobiles) */
+/* 📱 Fix Experience Section on Mobile */
 @media (max-width: 768px) {
-    body {
-        padding: 20px 8%; /* Add equal left & right padding */
-        text-align: center; /* Center all content */
-    }
-
-    .footer {
-        text-align: center; /* Center all footer content */
-        padding: 20px 8%; /* Add left & right padding */
-    }
-
-    .container, .projects-container, .experience-container {
-        max-width: 100%; /* Ensure full width */
-        padding: 0 8%; /* Left & right padding */
-        margin: 0 auto; /* Center content */
-    }
-
-    #landing {
-        text-align: center; /* Center everything */
-    }
-
-    .project-card {
-        flex-direction: column; 
-        text-align: center;
-        padding: 15px;
-        width: 100%; 
-    }
-
-    .skill-logos {
-        flex-wrap: wrap; /* Allow wrapping */
-        justify-content: center; /* Center skills */
-        padding: 0; /* Remove extra padding */
-    }
-
     .experience-item {
-        flex-direction: column;
-        text-align: center;
+        width: 100%; /* Ensure it takes full width */
+        padding: 15px; /* Add padding */
+        text-align: left; /* Keep text aligned to the left */
+    }
+
+    .experience-container {
+        width: 100%; /* Ensure full width */
+        padding: 0;
+        margin: 0 auto; /* Center the container */
+    }
+
+    .experience-item span {
         width: 100%;
+        display: block;
+        text-align: left; /* Align text properly */
     }
 
-    .button-container {
-        flex-direction: column; /* Stack buttons */
-        align-items: center;
-    }
-
-    .shimmer-button {
-        width: 90%; /* Make buttons full-width but with margin */
-        max-width: 300px;
+    .dropdown-icon {
+        float: right; /* Keeps dropdown icon aligned properly */
     }
 }
 
-/* 📱 Extra Small Screens (below 480px, for very small mobiles) */
+/* 📱 Fix Project Cards Alignment on Mobile */
+@media (max-width: 768px) {
+    .projects-container {
+        display: flex;
+        flex-direction: column; /* Stack projects */
+        align-items: center; /* Center projects */
+        width: 100%; 
+    }
+
+    .project-card {
+        width: 90%; /* Ensure it is centered */
+        max-width: 400px; /* Limit size */
+        text-align: center;
+        margin: 10px auto; /* Center it */
+    }
+
+    .project-content {
+        text-align: center; /* Ensure text is centered */
+    }
+}
+
+/* 📱 Extra Small Screens (below 480px) */
 @media (max-width: 480px) {
-    body {
-        padding: 15px 5%; /* Slightly less padding */
-    }
-
-    .container, .projects-container {
-        padding: 0 5%;
-        margin: 0 auto;
-    }
-
-    #landing .home__name {
-        font-size: 2.5rem; /* Adjust font size */
-    }
-
-    .shimmer-button {
-        font-size: 18px;
-        padding: 8px 15px;
-        width: 100%;
-        max-width: 280px;
-    }
-
-     .project-card {
-        padding: 10px;
-        width: 100%;
-    } 
-
-     .experience-item {
+    .experience-item {
+        padding: 12px; /* Reduce padding slightly */
         font-size: 14px;
-    } 
+    }
 
-    .skill-logos img {
-        width: 40px;
-        height: 40px;
+    .project-card {
+        width: 95%; /* Take more width */
+        max-width: 380px; /* Limit max width */
+    }
+
+    .project-title {
+        font-size: 1.1rem;
     }
 }
 
