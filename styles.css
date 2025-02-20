@@ -436,6 +436,32 @@ p {
     color: #005bb5; /* Slightly darker blue on hover */
 }
 
+/* Footer Centering */
+#footer {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center; /* Ensures text stays centered */
+    width: 100%; /* Full width */
+    padding: 20px 0; /* Adds spacing */
+}
+
+/* Ensures the text inside is centered */
+#footer p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 0; /* Remove any unwanted default margin */
+    padding: 0 10px; /* Add slight padding */
+}
+
+/* Centers contact links properly */
+.contact-link {
+    display: inline-block;
+    margin: 0 5px; /* Space between links */
+}
+
+
+
 
 
 /* 📱 Mobile Styles (for screens smaller than 768px, like small monitors & mobiles) */
@@ -443,6 +469,11 @@ p {
     body {
         padding: 20px 8%; /* Add equal left & right padding */
         text-align: center; /* Center all content */
+    }
+
+    .footer {
+        text-align: center; /* Center all footer content */
+        padding: 20px 8%; /* Add left & right padding */
     }
 
     .container, .projects-container, .experience-container {
@@ -455,12 +486,12 @@ p {
         text-align: center; /* Center everything */
     }
 
-    .project-card {
-        flex-direction: column; /* Stack project details */
+    /* .project-card {
+        flex-direction: column; 
         text-align: center;
         padding: 15px;
-        width: 100%; /* Use full available width */
-    }
+        width: 100%; 
+    } */
 
     .skill-logos {
         flex-wrap: wrap; /* Allow wrapping */
@@ -468,11 +499,11 @@ p {
         padding: 0; /* Remove extra padding */
     }
 
-    .experience-item {
+    /* .experience-item {
         flex-direction: column;
         text-align: center;
         width: 100%;
-    }
+    } */
 
     .button-container {
         flex-direction: column; /* Stack buttons */
@@ -507,14 +538,14 @@ p {
         max-width: 280px;
     }
 
-    .project-card {
+    /* .project-card {
         padding: 10px;
         width: 100%;
-    }
+    } */
 
-    .experience-item {
+    /* .experience-item {
         font-size: 14px;
-    }
+    } */
 
     .skill-logos img {
         width: 40px;
