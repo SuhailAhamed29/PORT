@@ -486,12 +486,12 @@ p {
         text-align: center; /* Center everything */
     }
 
-    /* .project-card {
+    .project-card {
         flex-direction: column; 
         text-align: center;
         padding: 15px;
         width: 100%; 
-    } */
+    }
 
     .skill-logos {
         flex-wrap: wrap; /* Allow wrapping */
@@ -499,11 +499,11 @@ p {
         padding: 0; /* Remove extra padding */
     }
 
-    /* .experience-item {
+    .experience-item {
         flex-direction: column;
         text-align: center;
         width: 100%;
-    } */
+    }
 
     .button-container {
         flex-direction: column; /* Stack buttons */
@@ -538,14 +538,14 @@ p {
         max-width: 280px;
     }
 
-    /* .project-card {
+     .project-card {
         padding: 10px;
         width: 100%;
-    } */
+    } 
 
-    /* .experience-item {
+     .experience-item {
         font-size: 14px;
-    } */
+    } 
 
     .skill-logos img {
         width: 40px;
