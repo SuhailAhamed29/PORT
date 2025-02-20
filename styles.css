@@ -291,7 +291,7 @@ p {
     background-color: #000000;
     border-radius: 15px;
     padding: 20px;
-    width: 95%;
+    width: 90%;
     height: 90%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, background 0.3s ease, border 0.3s ease;
