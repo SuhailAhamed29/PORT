@@ -438,38 +438,40 @@ p {
 
 
 
-/* 📱 Mobile Styles (for screens smaller than 768px) */
+/* 📱 Mobile Styles (for screens smaller than 768px, like small monitors & mobiles) */
 @media (max-width: 768px) {
     body {
-        padding: 20px 10%; /* Reduce left & right padding for smaller screens */
+        padding: 20px 8%; /* Add equal left & right padding */
+        text-align: center; /* Center all content */
     }
 
-    #landing .home__name {
-        font-size: 3rem; /* Reduce heading size for better fit */
+    .container, .projects-container, .experience-container {
+        max-width: 100%; /* Ensure full width */
+        padding: 0 8%; /* Left & right padding */
+        margin: 0 auto; /* Center content */
     }
 
-    .projects-container {
-        grid-template-columns: 1fr; /* Stack projects vertically */
+    #landing {
+        text-align: center; /* Center everything */
     }
 
     .project-card {
-        flex-direction: column; /* Change to column layout */
+        flex-direction: column; /* Stack project details */
         text-align: center;
         padding: 15px;
-    }
-
-    .project-image {
-        margin: 0 auto 10px auto; /* Center project images */
+        width: 100%; /* Use full available width */
     }
 
     .skill-logos {
         flex-wrap: wrap; /* Allow wrapping */
         justify-content: center; /* Center skills */
+        padding: 0; /* Remove extra padding */
     }
 
     .experience-item {
         flex-direction: column;
         text-align: center;
+        width: 100%;
     }
 
     .button-container {
@@ -478,14 +480,20 @@ p {
     }
 
     .shimmer-button {
-        width: 100%; /* Make buttons full-width */
+        width: 90%; /* Make buttons full-width but with margin */
+        max-width: 300px;
     }
 }
 
-/* 📱 Extra Small Screens (for screens smaller than 480px) */
+/* 📱 Extra Small Screens (below 480px, for very small mobiles) */
 @media (max-width: 480px) {
     body {
-        padding: 15px 5%; /* Reduce padding further */
+        padding: 15px 5%; /* Slightly less padding */
+    }
+
+    .container, .projects-container {
+        padding: 0 5%;
+        margin: 0 auto;
     }
 
     #landing .home__name {
@@ -493,16 +501,15 @@ p {
     }
 
     .shimmer-button {
-        font-size: 18px; /* Reduce button text size */
+        font-size: 18px;
         padding: 8px 15px;
+        width: 100%;
+        max-width: 280px;
     }
 
     .project-card {
         padding: 10px;
-    }
-
-    .project-title {
-        font-size: 1.1rem;
+        width: 100%;
     }
 
     .experience-item {
@@ -510,7 +517,9 @@ p {
     }
 
     .skill-logos img {
-        width: 40px; /* Adjust skill icon size */
+        width: 40px;
         height: 40px;
     }
 }
+
+
