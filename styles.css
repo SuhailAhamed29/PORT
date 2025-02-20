@@ -148,15 +148,10 @@ p {
 
 .skill-logos {
     display: flex;
-    flex-wrap: wrap; /* Allows logos to wrap on smaller screens */
-    justify-content: flex-start; /* Aligns items to the left */
     gap: 1em;
     margin-top: 1em;
     
-    box-sizing: border-box; /* Prevents layout issues */
 }
-
-
 
 .skill-logos img {
     width: 50px;
@@ -397,25 +392,23 @@ p {
 }
 
 /* Floating Image Preview */
-/* Floating Image Preview */
 #preview-box {
     position: fixed;
-    
-    padding: 10px; 
-    border-radius: 20px;
+   
+    padding: 1px; /* Reduce padding for a cleaner look */
+    border-radius: 120px; /* Smooth rounded edges */
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease, transform 0.15s ease-out;
     transform: scale(1);
 }
 
-#preview-image, .skill-logos img {
-    width: 170px;  /* Set a fixed width */
-    height: 110px; /* Set a fixed height */
-    border-radius: 20px; /* Smooth rounded corners */
-    object-fit: cover; /* Ensures image maintains aspect ratio */
+#preview-image {
+    width: 200px;
+    height: auto;
+    border-radius: 10px; /* Smooth rounded image */
+    object-fit: cover;
 }
-
 
 
 
